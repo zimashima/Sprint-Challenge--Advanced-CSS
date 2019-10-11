@@ -334,6 +334,7 @@ footer {
   font-size: 1.6rem;
   padding: 2%;
   border-radius: 10px;
+  border: none;
 }
 .home .walk .sign-up-button:hover {
   background-color: #454A59;
@@ -343,5 +344,55 @@ footer {
   .home .walk .sign-up-button {
     width: 95%;
     height: 50px;
+  }
+}
+.home .subscribe,
+.home .contact {
+  text-align: center;
+}
+.home .subscribe .theform,
+.home .contact .theform {
+  width: 75%;
+  margin: 30px auto;
+  padding: 30px;
+  background-color: whitesmoke;
+  border-radius: 10px;
+}
+.home .subscribe .theform p,
+.home .contact .theform p {
+  margin: 5px;
+}
+.home .subscribe .theform input[type=text],
+.home .contact .theform input[type=text] {
+  width: 100%;
+  height: 30px;
+}
+.home .subscribe .theform textarea,
+.home .contact .theform textarea {
+  width: 100%;
+  height: 75px;
+}
+.home .subscribe .theform input[type=submit],
+.home .contact .theform input[type=submit] {
+  width: 100px;
+  height: 40px;
+  background-color: #23293B;
+  font-family: 'Ubuntu', sans-serif;
+  color: white;
+  font-size: 1.6rem;
+  padding: 2%;
+  border-radius: 10px;
+  border: none;
+  margin: 10px auto;
+}
+.home .subscribe .theform input[type=submit]:hover,
+.home .contact .theform input[type=submit]:hover {
+  background-color: #454A59;
+  color: #81848E;
+}
+@media (max-width: 500px) {
+  .home .subscribe .theform input[type=submit],
+  .home .contact .theform input[type=submit] {
+    width: 100%;
   }
 }
