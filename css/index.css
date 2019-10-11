@@ -162,12 +162,21 @@ p {
 }
 nav {
   display: flex;
+  width: 100%;
   margin: 0 auto;
   flex-direction: column;
   justify-content: center;
   background-color: #F6F6F6;
   font-family: #454A59;
   border: 1px solid #F1F1F1;
+  z-index: 999;
+  position: fixed;
+}
+@media (max-width: 500px) {
+  nav {
+    z-index: 1;
+    position: static;
+  }
 }
 nav .title h1 {
   padding: 10px;
@@ -208,6 +217,12 @@ footer {
 .home .intro .main-header {
   max-width: 100%;
   height: auto;
+  padding-top: 100px;
+}
+@media (max-width: 500px) {
+  .home .intro .main-header {
+    padding-top: 0;
+  }
 }
 .home .intro h2 {
   padding: 15px;
@@ -319,6 +334,10 @@ footer {
   font-size: 1.6rem;
   padding: 2%;
   border-radius: 10px;
+}
+.home .walk .sign-up-button:hover {
+  background-color: #454A59;
+  color: #81848E;
 }
 @media (max-width: 500px) {
   .home .walk .sign-up-button {
