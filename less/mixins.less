@@ -1,12 +1,14 @@
 // Mixins Here
 
-.custombutton(@w: 150px, @h: 40px, @c: darkgray, @fs: 1.6rem){
+.custombutton(@w: 100px, @h: 40px, @c:@button-bg, @fs: 1.6rem){
     width: @w;
-    height:@ht;
-    color: @c;
+    height:@h;
+    background-color: @c;
+    color: white;
     font-size: @fs;
     padding: 2%;
     margin: 2%;
+    border-radius: 10px;
 }
 
 .nava(){
