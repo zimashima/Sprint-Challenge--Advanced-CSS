@@ -34,13 +34,28 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the difference between an adaptive website and a fully responsive website?
 
+    ANSWER - adaptive website introduced the concept of media breakpoint and the CSS are writtten based on the size of the screen but the website wouldn't look good if the screen is not at a certain breakpoint because it is still static. Responsive website combines the elements of Fixed, Fluid, and Adaptive, so it changes fluidly and works on different type of screen at different media breakpoins.
+
 2. Describe what it means to be mobile first vs desktop first.
+    ANSWER - 
+    Mobile first is developing a website from what it would look on mobile screen first before it would look on desk top.
+    Desktop first is developing a website from desktop first before adding lower media breakpoint for smaller devices.
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
+    ANSWER - font-size 62.5% change the default font size to 62.5% of before using 'rem' to increase that 62.5% font size by times. 
+    For example, the default font size for a regular setting screen is 16px, 62.5% of 16px is 10px, that 10px will be the new default setting for html page. Then we can use rem to increase that font size by time, e.g.: 2rem = 20px, 4rem = 40px. REM is 'root em' so the changed font size will always be based on the root setting, which in this case is html.
 
 4. How would you describe preprocessing to someone new to CSS?
+    ANSWER - preprocessing enhances the ability of CSS and changes the way someone writes CSS. In normal CSS, you can only right syntax by line, and it'll only be in one pages which makes it hard for us to find where things are, and what each selector means. 
+    
+    Preprocessing uses compiler which allow us to work in a css workspace, it could be LESS or SASS, and in that CSS workspace, you can nest the selector, inside another selector, so your code becomes more organize. 
+    
+    You can also create another workspaces to work on different parts of the styling, such as, navigation.less where you can write code in there to store styles or navigation bar, or reset.less, to reset all the setting, and complie them together in the main LESS file. In that way, when an issue occure, or there are some major changes that needed to be made, you can just go to the right LESS file to fix it.
 
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+    ANSWER - I like the import aspect of it because I can then slices my code in the different section and work on them separately. So that way, when my code has a problem, I know where to go to fix. No more scrolling down 1,000+ lines to find out what was wrong.
+
+    The aspact that I also like, but also give me trouble with is nesting. As powerful as it can be, you have to make sure you nest it in the right spot or it wouldn't work, and you have to make sure you close the selector correctly or it won't work.
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 

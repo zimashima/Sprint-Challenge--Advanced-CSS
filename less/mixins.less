@@ -1,1 +1,28 @@
 // Mixins Here
+
+.custombutton(@w: 100px, @h: 40px, @c:@button-bg, @fs: 1.6rem){
+    width: @w;
+    height:@h;
+    background-color: @c;
+    font-family: @main-font;
+    color: white;
+    font-size: @fs;
+    padding: 2%;
+    border-radius: 10px;
+    border: none;
+
+    &:hover{
+        background-color: @river-bend;
+        color: @waterloo;
+    }
+}
+
+.mobilelayout(){
+    width: @mob-width;
+    margin: 0 auto;
+}
+
+.nava(){
+    color: @nav-font;
+    text-decoration: none;
+}

@@ -1,18 +1,36 @@
 // Home Content
 
 .home {
+  
+  @media @phone{
+    max-width: 100%;
+
+  }// media home
 
   .intro {
+    
+    .main-header{
+      max-width: 100%;
+      height: auto;
+      padding-top: 100px;
+
+      @media @phone{
+        padding-top: 0;
+      }// media main header
+    }//main-header img
 
     h2 {
       padding: 15px;
-    }
+    }// intro h2
 
     p {
       padding:0 15px;
-    }
+    }// intro p
   
-  }
+    @media @phone{
+      padding-bottom: 20px;
+    }// media intro
+  }// intro
 
   .space-images {
     display: flex;
@@ -24,20 +42,37 @@
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
-    }
-  }
+
+      @media @phone{
+        .mobilelayout();
+      }//media img
+    }// space-images img
+
+    .sky, .launch{
+      @media @phone{
+        display:none;
+      }//media sky launch
+    }//sky lanch
+
+    
+  }//space image
 
   .visit-planets {
     padding: 15px;
 
+    @media @phone{
+      .mobilelayout();
+      padding: 5px;
+    }// media visit
+
     h3 {
       margin-top: 11px;
-    }
+    }// visit h3
 
     p {
       margin-top: 13px;
-    }
-  }
+    }// visit p
+  }// visit
 
   .walk {
     margin-top: 60px;
@@ -46,29 +81,91 @@
     display: flex;
     justify-content: center;
 
+    @media @phone{
+      flex-direction: column-reverse;
+      align-items: center;
+      margin-top: 20px;
+      padding: 15px;
+    }
+
     .walk-text {
       width: 50%;
 
+      @media @phone{
+        .mobilelayout();
+      }// media walk-text
+
       h3 {
         margin-bottom: 10px;
-      }
+
+        @media @phone{
+          margin-top: 10px;
+        }
+      }//walktext h3
 
       p {
         margin-bottom: 26px;
-      }
+      }// walktext p
 
-      .btn {
-      }
-    }
+    }//walktext
 
     .walk-img {
       width: 46%;
       margin-left: 4%;
+
+      @media @phone{
+        .mobilelayout();
+        text-align: center;
+      }// media walk-text
       
       img {
         width: 100%;
         height: auto;
         border-radius: 10px;
+      }// walkimg img
+    }//walkimg
+
+    .sign-up-button{
+      .custombutton();
+
+      @media @phone{
+        width: @mob-width;
+        height: 50px;
+      }//media signup
+
+    }// sign-up-button
+
+  }//walk
+
+  .subscribe, .contact{
+    text-align: center;
+    
+    .theform{
+      width: 75%;
+      margin: 30px auto;
+      padding: 30px;
+      background-color: whitesmoke;
+      border-radius: 10px;
+
+      p{
+        margin: 5px;
+      }
+
+      input[type=text]{
+        width: 100%;
+        height: 30px;
+      }
+      textarea{
+        width: 100%;
+        height: 75px;
+      }
+      input[type=submit]{
+        .custombutton(100%, 50px,@btn-bg-color,2rem);
+        margin: 10px auto;
+
+        @media @phone{
+          width: 100%;
+        }
       }
     }
   }
